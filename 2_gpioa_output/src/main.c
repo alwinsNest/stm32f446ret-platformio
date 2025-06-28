@@ -11,7 +11,11 @@ int main(void)
 	GPIOA->MODER &= ~(1U << 11);
 	while (1)
 	{
-		GPIOA->ODR ^= LED_PIN;
+		GPIOA->BSRR |= LED_PIN; // PIN5 control uses BSRR(ref. manual 7.4.7)
+		for (volatile int i = 0; i < 1000000; i++)
+		{
+		}
+		GPIOA->BSRR |= (1U << 21); // BR21 (bit reset - resets the bit at position 5)
 		for (volatile int i = 0; i < 1000000; i++)
 		{
 		}

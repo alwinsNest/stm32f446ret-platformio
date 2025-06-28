@@ -16,6 +16,9 @@
 		{
 			"name": "2_gpioa_output",
 			"path": "2_gpioa_output"
+		},
+		{
+			"path": "3_gpioa_input"
 		}
 	],
 	"settings": {
