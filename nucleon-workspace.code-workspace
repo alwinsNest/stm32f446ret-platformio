@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "nucleo-setup-test"
+		},
+		{
+			"name": "1_led_toggle_addr_struct",
+			"path": "1_led_toggle_addr_struct"
+		},
+		{
+			"path": "docs"
+		}
+	]
+}
