@@ -7,6 +7,10 @@ Testing out development on platformio over STMcube IDE(too resource heavy).
 ### board: https://www.st.com/en/microcontrollers-microprocessors/stm32f446re.html
 ![STM32F446RE](image.png)
 
+## req
+- STM headers (git clone --recursive https://github.com/STMicroelectronics/STM32CubeF4.git)
+- platformio.ini changes for these headers build.
+
 ## Refs - notes
 - MCU pins are grped in PORTS. (pinout diagram below)
 ![alt text](image-2.png)
